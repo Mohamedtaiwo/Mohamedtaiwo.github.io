@@ -47,26 +47,25 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileNav.classList.toggle('active');
     });
     
-    // Tab switching for projects
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // Remove active class from all buttons
-            tabBtns.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Get the tab to show
-            const tabId = this.getAttribute('data-tab');
-            
-            // Hide all tab contents
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            // Show the selected tab content
-            document.getElementById(tabId).classList.add('active');
-        });
+   // Tab switching for projects
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        // Remove active class from all buttons
+        tabBtns.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Get the tab to show
+        const tabId = this.getAttribute('data-tab');
+        
+        // Hide all tab contents
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Show the selected tab content
+        document.getElementById(tabId).classList.add('active');
     });
-    
+});
     // Active menu item on scroll
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;

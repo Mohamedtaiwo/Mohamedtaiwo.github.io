@@ -117,116 +117,154 @@
                 <button class="tab-btn" data-tab="powershell">PowerShell</button>
                 <button class="tab-btn" data-tab="gpo">Stratégies GPO</button>
                 <button class="tab-btn" data-tab="clients">Postes Clients</button>
+                <button class="tab-btn" data-tab="Login">Login windows10</button>
             </div>
             
-            <div class="tab-content">
-                <!-- Tab 1: Configuration Serveur -->
-                <div id="config" class="tab-pane active">
-                    <div class="project-content">
-                        <div class="project-description">
-                            <h3>Configuration Initiale du Serveur</h3>
-                            <p>Configuration des paramètres réseau sur Windows Server 2019, incluant l'attribution d'adresses IP statiques, la configuration DNS et la préparation pour le rôle de contrôleur de domaine.</p>
-                            <ul class="project-details">
-                                <li><i class="fas fa-check-circle"></i> Configuration IP statique (192.168.10.10)</li>
-                                <li><i class="fas fa-check-circle"></i> Définition du masque de sous-réseau (255.255.255.0)</li>
-                                <li><i class="fas fa-check-circle"></i> Configuration de la passerelle par défaut</li>
-                                <li><i class="fas fa-check-circle"></i> Configuration des serveurs DNS</li>
-                            </ul>
-                            <p>La configuration correcte des paramètres réseau est essentielle pour assurer le bon fonctionnement du contrôleur de domaine dans l'infrastructure.</p>
-                        </div>
-                        <div class="project-image">
-                            <img src="images/config-ip.jpg" alt="Configuration IP">
-                            <div class="image-caption">Configuration IP via l'invite de commandes (ipconfig)</div>
-                        </div>
+           <!-- Section Projets -->
+<section id="projets">
+    <div class="container">
+        <div class="section-header">
+            <h2>Projets <span>Réalisés</span></h2>
+            <p>Infrastructure Active Directory complète pour environnement d'entreprise</p>
+        </div>
+        <div class="project-tabs">
+            <button class="tab-btn active" data-tab="config">Configuration</button>
+            <button class="tab-btn" data-tab="ad">Active Directory</button>
+            <button class="tab-btn" data-tab="powershell">PowerShell</button>
+            <button class="tab-btn" data-tab="gpo">Stratégies GPO</button>
+            <button class="tab-btn" data-tab="clients">Postes Clients</button>
+            <button class="tab-btn" data-tab="login">Login Windows 10</button>
+        </div>
+        
+        <div class="tab-content">
+            <!-- Tab 1: Configuration Serveur -->
+            <div id="config" class="tab-pane active">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Configuration Initiale du Serveur</h3>
+                        <p>Configuration des paramètres réseau sur Windows Server 2019, incluant l'attribution d'adresses IP statiques, la configuration DNS et la préparation pour le rôle de contrôleur de domaine.</p>
+                        <ul class="project-details">
+                            <li><i class="fas fa-check-circle"></i> Configuration IP statique (192.168.10.10)</li>
+                            <li><i class="fas fa-check-circle"></i> Définition du masque de sous-réseau (255.255.255.0)</li>
+                            <li><i class="fas fa-check-circle"></i> Configuration de la passerelle par défaut</li>
+                            <li><i class="fas fa-check-circle"></i> Configuration des serveurs DNS</li>
+                        </ul>
+                        <p>La configuration correcte des paramètres réseau est essentielle pour assurer le bon fonctionnement du contrôleur de domaine dans l'infrastructure.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/config-ip.jpg" alt="Configuration IP">
+                        <div class="image-caption">Configuration IP via l'invite de commandes (ipconfig)</div>
                     </div>
                 </div>
-                
-                <!-- Tab 2: Active Directory -->
-                <div id="ad" class="tab-pane">
-                    <div class="project-content">
-                        <div class="project-description">
-                            <h3>Déploiement d'Active Directory</h3>
-                            <p>Installation et configuration du rôle Active Directory Domain Services (AD DS) pour créer un nouvel environnement de domaine sécurisé.</p>
-                            <ul class="project-details">
-                                <li><i class="fas fa-check-circle"></i> Création du domaine SecureCorp.local</li>
-                                <li><i class="fas fa-check-circle"></i> Configuration du contrôleur de domaine principal</li>
-                                <li><i class="fas fa-check-circle"></i> Structure organisationnelle hiérarchique</li>
-                                <li><i class="fas fa-check-circle"></i> Organisation par départements (IT, Finance, RH)</li>
-                            </ul>
-                            <p>La conception d'une structure organisationnelle adaptée permet une gestion efficace des utilisateurs, des groupes et des stratégies de groupe.</p>
-                        </div>
-                        <div class="project-image">
-                            <img src="images/active-directory.jpg" alt="Structure Active Directory">
-                            <div class="image-caption">Structure organisationnelle Active Directory avec unités d'organisation</div>
-                        </div>
+            </div>
+            
+            <!-- Tab 2: Active Directory -->
+            <div id="ad" class="tab-pane">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Déploiement d'Active Directory</h3>
+                        <p>Installation et configuration du rôle Active Directory Domain Services (AD DS) pour créer un nouvel environnement de domaine sécurisé.</p>
+                        <ul class="project-details">
+                            <li><i class="fas fa-check-circle"></i> Création du domaine SecureCorp.local</li>
+                            <li><i class="fas fa-check-circle"></i> Configuration du contrôleur de domaine principal</li>
+                            <li><i class="fas fa-check-circle"></i> Structure organisationnelle hiérarchique</li>
+                            <li><i class="fas fa-check-circle"></i> Organisation par départements (IT, Finance, RH)</li>
+                        </ul>
+                        <p>La conception d'une structure organisationnelle adaptée permet une gestion efficace des utilisateurs, des groupes et des stratégies de groupe.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/active-directory.jpg" alt="Structure Active Directory">
+                        <div class="image-caption">Structure organisationnelle Active Directory avec unités d'organisation</div>
                     </div>
                 </div>
-                
-                <!-- Tab 3: PowerShell -->
-                <div id="powershell" class="tab-pane">
-                    <div class="project-content">
-                        <div class="project-description">
-                            <h3>Automatisation avec PowerShell</h3>
-                            <p>Développement de scripts PowerShell pour automatiser la création et la gestion des utilisateurs, des groupes et des politiques de sécurité.</p>
-                            <ul class="project-details">
-                                <li><i class="fas fa-check-circle"></i> Création de groupes de sécurité</li>
-                                <li><i class="fas fa-check-circle"></i> Création et configuration d'utilisateurs</li>
-                                <li><i class="fas fa-check-circle"></i> Attribution d'appartenances aux groupes</li>
-                                <li><i class="fas fa-check-circle"></i> Définition de mots de passe sécurisés</li>
-                            </ul>
-                            <p>L'automatisation avec PowerShell permet un déploiement rapide et cohérent, tout en réduisant les risques d'erreurs humaines.</p>
-                        </div>
-                        <div class="project-image">
-                            <img src="images/powershell.jpg" alt="Scripts PowerShell">
-                            <div class="image-caption">Scripts PowerShell pour la création d'utilisateurs et groupes</div>
-                        </div>
+            </div>
+            
+            <!-- Tab 3: PowerShell -->
+            <div id="powershell" class="tab-pane">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Automatisation avec PowerShell</h3>
+                        <p>Développement de scripts PowerShell pour automatiser la création et la gestion des utilisateurs, des groupes et des politiques de sécurité.</p>
+                        <ul class="project-details">
+                            <li><i class="fas fa-check-circle"></i> Création de groupes de sécurité</li>
+                            <li><i class="fas fa-check-circle"></i> Création et configuration d'utilisateurs</li>
+                            <li><i class="fas fa-check-circle"></i> Attribution d'appartenances aux groupes</li>
+                            <li><i class="fas fa-check-circle"></i> Définition de mots de passe sécurisés</li>
+                        </ul>
+                        <p>L'automatisation avec PowerShell permet un déploiement rapide et cohérent, tout en réduisant les risques d'erreurs humaines.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/powershell.jpg" alt="Scripts PowerShell">
+                        <div class="image-caption">Scripts PowerShell pour la création d'utilisateurs et groupes</div>
                     </div>
                 </div>
-                
-                <!-- Tab 4: Stratégies GPO -->
-                <div id="gpo" class="tab-pane">
-                    <div class="project-content">
-                        <div class="project-description">
-                            <h3>Configuration des Stratégies de Groupe</h3>
-                            <p>Mise en place de stratégies de groupe (GPO) pour sécuriser l'environnement et standardiser la configuration sur l'ensemble du domaine.</p>
-                            <ul class="project-details">
-                                <li><i class="fas fa-check-circle"></i> Création de GPO globale pour l'ensemble du domaine</li>
-                                <li><i class="fas fa-check-circle"></i> Politiques de sécurité spécifiques par département</li>
-                                <li><i class="fas fa-check-circle"></i> Configuration des paramètres de pare-feu</li>
-                                <li><i class="fas fa-check-circle"></i> Mise en place d'audits de sécurité</li>
-                            </ul>
-                            <p>Les stratégies de groupe permettent de maintenir un niveau de sécurité élevé et cohérent sur l'ensemble des postes de l'entreprise.</p>
-                        </div>
-                        <div class="project-image">
-                            <img src="images/gpo.jpg" alt="Configuration GPO">
-                            <div class="image-caption">Configuration des stratégies de groupe (GPO)</div>
-                        </div>
+            </div>
+            
+            <!-- Tab 4: Stratégies GPO -->
+            <div id="gpo" class="tab-pane">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Configuration des Stratégies de Groupe</h3>
+                        <p>Mise en place de stratégies de groupe (GPO) pour sécuriser l'environnement et standardiser la configuration sur l'ensemble du domaine.</p>
+                        <ul class="project-details">
+                            <li><i class="fas fa-check-circle"></i> Création de GPO globale pour l'ensemble du domaine</li>
+                            <li><i class="fas fa-check-circle"></i> Politiques de sécurité spécifiques par département</li>
+                            <li><i class="fas fa-check-circle"></i> Configuration des paramètres de pare-feu</li>
+                            <li><i class="fas fa-check-circle"></i> Mise en place d'audits de sécurité</li>
+                        </ul>
+                        <p>Les stratégies de groupe permettent de maintenir un niveau de sécurité élevé et cohérent sur l'ensemble des postes de l'entreprise.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/gpo.jpg" alt="Configuration GPO">
+                        <div class="image-caption">Configuration des stratégies de groupe (GPO)</div>
                     </div>
                 </div>
-                
-                <!-- Tab 5: Postes Clients -->
-                <div id="clients" class="tab-pane">
-                    <div class="project-content">
-                        <div class="project-description">
-                            <h3>Intégration des Postes Clients</h3>
-                            <p>Configuration et intégration des postes clients Windows 10 au domaine SecureCorp.local avec vérification de l'application des stratégies.</p>
-                            <ul class="project-details">
-                                <li><i class="fas fa-check-circle"></i> Jonction des postes au domaine</li>
-                                <li><i class="fas fa-check-circle"></i> Authentification des utilisateurs</li>
-                                <li><i class="fas fa-check-circle"></i> Vérification de l'application des GPO</li>
-                                <li><i class="fas fa-check-circle"></i> Tests de connexion des utilisateurs</li>
-                            </ul>
-                            <p>L'intégration et les tests des postes clients permettent de valider le bon fonctionnement de l'ensemble de l'infrastructure.</p>
-                        </div>
-                        <div class="project-image">
-                            <img src="images/client.jpg" alt="Intégration Postes Clients">
-                            <div class="image-caption">Intégration d'un poste client Windows 10 au domaine</div>
-                        </div>
+            </div>
+            
+            <!-- Tab 5: Postes Clients -->
+            <div id="clients" class="tab-pane">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Intégration des Postes Clients</h3>
+                        <p>Configuration et intégration des postes clients Windows 10 au domaine SecureCorp.local avec vérification de l'application des stratégies.</p>
+                        <ul class="project-details">
+                            <li><i class="fas fa-check-circle"></i> Jonction des postes au domaine</li>
+                            <li><i class="fas fa-check-circle"></i> Authentification des utilisateurs</li>
+                            <li><i class="fas fa-check-circle"></i> Vérification de l'application des GPO</li>
+                            <li><i class="fas fa-check-circle"></i> Tests de connexion des utilisateurs</li>
+                        </ul>
+                        <p>L'intégration et les tests des postes clients permettent de valider le bon fonctionnement de l'ensemble de l'infrastructure.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/client.jpg" alt="Intégration Postes Clients">
+                        <div class="image-caption">Intégration d'un poste client Windows 10 au domaine</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab 6: Login Windows 10 -->
+            <div id="login" class="tab-pane">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Authentification des Utilisateurs</h3>
+                        <p>Mise en place de l'authentification des utilisateurs au domaine SecureCorp.local depuis les postes clients Windows 10.</p>
+                        <ul class="project-details">
+                            <li><i class="fas fa-check-circle"></i> Connexion sécurisée au domaine</li>
+                            <li><i class="fas fa-check-circle"></i> Application des profils utilisateurs</li>
+                            <li><i class="fas fa-check-circle"></i> Accès aux ressources réseau selon les droits définis</li>
+                            <li><i class="fas fa-check-circle"></i> Synchronisation des paramètres via les stratégies de groupe</li>
+                        </ul>
+                        <p>L'authentification centralisée permet de contrôler précisément les accès tout en offrant une expérience utilisateur fluide.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/login.jpg" alt="Écran de connexion Windows 10">
+                        <div class="image-caption">Écran de connexion d'un utilisateur au domaine SecureCorp.local</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Section Résultats -->
     <section id="resultats">
