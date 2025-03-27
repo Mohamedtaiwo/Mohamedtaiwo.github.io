@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Administration Système - Windows Server & Active Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <h1>Admin<span>Pro</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- En-tête Hero -->
+    <header id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Administration Système <span>Windows Server</span></h1>
+                    <h2>Spécialiste Active Directory & Infrastructure</h2>
+                    <p>Déploiement, configuration et gestion d'environnements Windows Server sécurisés et optimisés pour entreprises.</p>
+                    <div class="hero-buttons">
+                        <a href="#projets" class="btn btn-primary">Voir Mes Projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me Contacter</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/server-hero.png" alt="Server Infrastructure" class="bounce">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compétences <span>Techniques</span></h2>
+                <p>Expertise en administration et déploiement d'infrastructures Microsoft</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Windows Server</h3>
+                    <p>Installation, configuration et maintenance de Windows Server 2019.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Active Directory</h3>
+                    <p>Déploiement et gestion d'infrastructures Active Directory complexes.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurité</h3>
+                    <p>Mise en place de politiques de sécurité et stratégies de groupe (GPO).</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>PowerShell</h3>
+                    <p>Automatisation des tâches administratives avec PowerShell.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Virtualisation</h3>
+                    <p>Gestion d'environnements virtualisés avec VMware Workstation.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Infrastructure</h3>
+                    <p>Conception et déploiement d'infrastructures réseaux sécurisées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projets <span>Réalisés</span></h2>
+                <p>Infrastructure Active Directory complète pour environnement d'entreprise</p>
+            </div>
+            <div class="project-tabs">
+                <button class="tab-btn active" data-tab="config">Configuration</button>
+                <button class="tab-btn" data-tab="ad">Active Directory</button>
+                <button class="tab-btn" data-tab="powershell">PowerShell</button>
+                <button class="tab-btn" data-tab="gpo">Stratégies GPO</button>
+                <button class="tab-btn" data-tab="clients">Postes Clients</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Tab 1: Configuration Serveur -->
+                <div id="config" class="tab-pane active">
+                    <div class="project-content">
+                        <div class="project-description">
+                            <h3>Configuration Initiale du Serveur</h3>
+                            <p>Configuration des paramètres réseau sur Windows Server 2019, incluant l'attribution d'adresses IP statiques, la configuration DNS et la préparation pour le rôle de contrôleur de domaine.</p>
+                            <ul class="project-details">
+                                <li><i class="fas fa-check-circle"></i> Configuration IP statique (192.168.10.10)</li>
+                                <li><i class="fas fa-check-circle"></i> Définition du masque de sous-réseau (255.255.255.0)</li>
+                                <li><i class="fas fa-check-circle"></i> Configuration de la passerelle par défaut</li>
+                                <li><i class="fas fa-check-circle"></i> Configuration des serveurs DNS</li>
+                            </ul>
+                            <p>La configuration correcte des paramètres réseau est essentielle pour assurer le bon fonctionnement du contrôleur de domaine dans l'infrastructure.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/config-ip.jpg" alt="Configuration IP">
+                            <div class="image-caption">Configuration IP via l'invite de commandes (ipconfig)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab 2: Active Directory -->
+                <div id="ad" class="tab-pane">
+                    <div class="project-content">
+                        <div class="project-description">
+                            <h3>Déploiement d'Active Directory</h3>
+                            <p>Installation et configuration du rôle Active Directory Domain Services (AD DS) pour créer un nouvel environnement de domaine sécurisé.</p>
+                            <ul class="project-details">
+                                <li><i class="fas fa-check-circle"></i> Création du domaine SecureCorp.local</li>
+                                <li><i class="fas fa-check-circle"></i> Configuration du contrôleur de domaine principal</li>
+                                <li><i class="fas fa-check-circle"></i> Structure organisationnelle hiérarchique</li>
+                                <li><i class="fas fa-check-circle"></i> Organisation par départements (IT, Finance, RH)</li>
+                            </ul>
+                            <p>La conception d'une structure organisationnelle adaptée permet une gestion efficace des utilisateurs, des groupes et des stratégies de groupe.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/active-directory.jpg" alt="Structure Active Directory">
+                            <div class="image-caption">Structure organisationnelle Active Directory avec unités d'organisation</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab 3: PowerShell -->
+                <div id="powershell" class="tab-pane">
+                    <div class="project-content">
+                        <div class="project-description">
+                            <h3>Automatisation avec PowerShell</h3>
+                            <p>Développement de scripts PowerShell pour automatiser la création et la gestion des utilisateurs, des groupes et des politiques de sécurité.</p>
+                            <ul class="project-details">
+                                <li><i class="fas fa-check-circle"></i> Création de groupes de sécurité</li>
+                                <li><i class="fas fa-check-circle"></i> Création et configuration d'utilisateurs</li>
+                                <li><i class="fas fa-check-circle"></i> Attribution d'appartenances aux groupes</li>
+                                <li><i class="fas fa-check-circle"></i> Définition de mots de passe sécurisés</li>
+                            </ul>
+                            <p>L'automatisation avec PowerShell permet un déploiement rapide et cohérent, tout en réduisant les risques d'erreurs humaines.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/powershell.jpg" alt="Scripts PowerShell">
+                            <div class="image-caption">Scripts PowerShell pour la création d'utilisateurs et groupes</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab 4: Stratégies GPO -->
+                <div id="gpo" class="tab-pane">
+                    <div class="project-content">
+                        <div class="project-description">
+                            <h3>Configuration des Stratégies de Groupe</h3>
+                            <p>Mise en place de stratégies de groupe (GPO) pour sécuriser l'environnement et standardiser la configuration sur l'ensemble du domaine.</p>
+                            <ul class="project-details">
+                                <li><i class="fas fa-check-circle"></i> Création de GPO globale pour l'ensemble du domaine</li>
+                                <li><i class="fas fa-check-circle"></i> Politiques de sécurité spécifiques par département</li>
+                                <li><i class="fas fa-check-circle"></i> Configuration des paramètres de pare-feu</li>
+                                <li><i class="fas fa-check-circle"></i> Mise en place d'audits de sécurité</li>
+                            </ul>
+                            <p>Les stratégies de groupe permettent de maintenir un niveau de sécurité élevé et cohérent sur l'ensemble des postes de l'entreprise.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/gpo.jpg" alt="Configuration GPO">
+                            <div class="image-caption">Configuration des stratégies de groupe (GPO)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab 5: Postes Clients -->
+                <div id="clients" class="tab-pane">
+                    <div class="project-content">
+                        <div class="project-description">
+                            <h3>Intégration des Postes Clients</h3>
+                            <p>Configuration et intégration des postes clients Windows 10 au domaine SecureCorp.local avec vérification de l'application des stratégies.</p>
+                            <ul class="project-details">
+                                <li><i class="fas fa-check-circle"></i> Jonction des postes au domaine</li>
+                                <li><i class="fas fa-check-circle"></i> Authentification des utilisateurs</li>
+                                <li><i class="fas fa-check-circle"></i> Vérification de l'application des GPO</li>
+                                <li><i class="fas fa-check-circle"></i> Tests de connexion des utilisateurs</li>
+                            </ul>
+                            <p>L'intégration et les tests des postes clients permettent de valider le bon fonctionnement de l'ensemble de l'infrastructure.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/client.jpg" alt="Intégration Postes Clients">
+                            <div class="image-caption">Intégration d'un poste client Windows 10 au domaine</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Résultats -->
+    <section id="resultats">
+        <div class="container">
+            <div class="section-header">
+                <h2>Résultats <span>Obtenus</span></h2>
+                <p>Bénéfices apportés par l'infrastructure déployée</p>
+            </div>
+            <div class="results-container">
+                <div class="result-item">
+                    <div class="result-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>Sécurité renforcée</h3>
+                        <p>Mise en place d'un environnement robuste conforme aux bonnes pratiques de sécurité, avec politiques strictes et audits réguliers.</p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>Organisation optimisée</h3>
+                        <p>Structure hiérarchique claire facilitant la gestion des utilisateurs et des ressources, avec délégation d'administration par département.</p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>Administration simplifiée</h3>
+                        <p>Automatisation des tâches récurrentes via PowerShell, réduisant le temps d'administration et les risques d'erreurs.</p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>Gestion centralisée</h3>
+                        <p>Déploiement des politiques à l'échelle de l'entreprise via GPO, assurant une configuration homogène sur tous les postes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Me <span>Contacter</span></h2>
+                <p>Intéressé par mes services d'administration système ?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>fouadtaiwo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Téléphone</h3>
+                            <p>+33 7 71 30 01 60</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <p><a href="www.linkedin.com/in/fouad-taïwo" target="_blank">linkedin.com/in/votre-profil</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/Mohamedtaiwo" target="_blank">github.com/votre-username</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-moi un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Admin<span>Pro</span></h3>
+                    <p>Expertise en Administration Système Windows Server</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio Administration Système. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
